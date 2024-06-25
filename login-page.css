@@ -1,0 +1,164 @@
+body {
+  background-color: rgb(37, 9, 130);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.colore {
+  background-size: auto;
+  background-position: bottom;
+}
+
+.container {
+  height: 50vh;
+  background-image: url("https://images01.nicepage.com/c461c07a441a5d220e8feb1a/11bb31d631025068b1d0d5c5/ghghgh-min.jpg");
+  background-position: top;
+}
+
+.login-container {
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.login-form {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 80px;
+  border-radius: 390px;
+  width: 330px;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.logo {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.logo img {
+  width: 100px;
+  margin-top: 210px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.extra-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.extra-buttons button {
+  width: 48%;
+  padding: 8px;
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.extra-buttons button:hover {
+  background-color: #5a6268;
+}
+
+#form-div {
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 768px) {
+  .login-form {
+      padding: 60px;
+      width: 80%;
+      border-radius: 20px;
+  }
+
+  .logo img {
+      width: 80px;
+      margin-top: 150px;
+  }
+
+  button {
+      padding: 8px;
+  }
+
+  .extra-buttons button {
+      padding: 6px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .login-container {
+      margin-top: 50px;
+  }
+
+  .login-form {
+      padding: 40px;
+      width: 90%;
+      border-radius: 15px;
+  }
+
+  .logo img {
+      width: 60px;
+      margin-top: 100px;
+  }
+
+  button {
+      padding: 6px;
+  }
+
+  .extra-buttons {
+      flex-direction: column;
+  }
+
+  .extra-buttons button {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .extra-buttons button:last-child {
+      margin-bottom: 0;
+  }
+}
